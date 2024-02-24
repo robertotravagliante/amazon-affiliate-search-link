@@ -1,0 +1,36 @@
+AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN:
+  ENABLED: "Activer le plugin"
+  ENABLED_HELP: "Détermine si le plugin doit être opérationnel ou non"
+  ENABLED_YES: "Oui"
+  ENABLED_NO: "Non"
+
+  TAG_ID: "ID de tag d'affiliation Amazon"
+  TAG_ID_HELP: "Entrez ici votre ID de tag obtenu auprès d'Amazon, utilisé par Amazon pour reconnaître votre compte"
+
+  LINK_POSITIONS: "Positions du lien d'affiliation"
+  LINK_POSITIONS_HELP: "Décidez où placer vos liens d'affiliation"
+  LINK_POSITIONS_TOP: "Haut"
+  LINK_POSITIONS_MIDDLE: "Milieu"
+  LINK_POSITIONS_BOTTOM: "Fin"
+
+  N_PARAGRAPHS_TOP: "Nombre de paragraphes sur la page avant le lien en position 'Haut'"
+  N_PARAGRAPHS_TOP_HELP: "Si vous avez activé le lien d'affiliation en position 'Haut', vous pouvez spécifier après combien de paragraphes vous souhaitez afficher le lien"
+
+  PAGE_TYPES: "Types de pages (laisser vide pour toutes les pages)"
+  PAGE_TYPES_HELP: "Sélectionnez les types de pages pour activer les liens d'affiliation uniquement pour certains types"
+
+  PAGE_EXCEPTIONS: "Ne pas afficher les liens sur les pages suivantes"
+  PAGE_EXCEPTIONS_HELP: "Sélectionnez les pages où vous NE voulez PAS afficher les liens d'affiliation"
+
+  FULL_TITLE: "Utiliser le titre complet"
+  FULL_TITLE_HELP: "Déterminez s'il faut utiliser le titre complet de la page pour construire la chaîne de recherche Amazon dans le lien, en ignorant la recherche basée sur le contenu de l'article"
+  FULL_TITLE_YES: "Oui"
+  FULL_TITLE_NO: "Non"
+
+  SEARCH_FROM_POST_CONTENT: "Recherche sur Amazon basée sur le contenu de l'article"
+  SEARCH_FROM_POST_CONTENT_HELP: "Configurez la chaîne à rechercher sur Amazon en fonction du contenu de l'article. En pratique, définissez ce qu'il faut rechercher dans l'article pour obtenir le contenu à utiliser dans la recherche. Ce dernier est identifié par le marqueur '[content]'."
+  SEARCH_FROM_POST_CONTENT_DEFAULT: "Curiosités sur [content] que vous pourriez trouver utiles"
+
+  AFFILIATE_LINK_TEMPLATE: "Modèle de lien d'affiliation"
+  AFFILIATE_LINK_TEMPLATE_HELP: "Modèle à utiliser pour créer le lien d'affiliation. Les symboles '[search_keywords]' et '[tag_id]' seront remplacés respectivement par les mots-clés configurés et l'ID de tag"
+  AFFILIATE_LINK_TEMPLATE_DEFAULT: 'https://www.amazon.fr/s?k=[search_keywords]&linkCode=ll2&tag=[tag_id]'

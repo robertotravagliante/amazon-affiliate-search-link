@@ -1,0 +1,36 @@
+AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN:
+  ENABLED: "Activar plugin"
+  ENABLED_HELP: "Determina si el plugin debe estar operativo o no"
+  ENABLED_YES: "Sí"
+  ENABLED_NO: "No"
+
+  TAG_ID: "ID de etiqueta de afiliado de Amazon"
+  TAG_ID_HELP: "Ingrese aquí su ID de etiqueta obtenido de Amazon, utilizado por Amazon para reconocer su cuenta"
+
+  LINK_POSITIONS: "Posiciones del enlace de afiliado"
+  LINK_POSITIONS_HELP: "Decida dónde colocar sus enlaces de afiliados"
+  LINK_POSITIONS_TOP: "Inicio"
+  LINK_POSITIONS_MIDDLE: "Medio"
+  LINK_POSITIONS_BOTTOM: "Final"
+
+  N_PARAGRAPHS_TOP: "Número de párrafos en la página antes del enlace en la posición 'Inicio'"
+  N_PARAGRAPHS_TOP_HELP: "Si ha habilitado el enlace de afiliado en la posición 'Inicio', puede especificar después de cuántos párrafos desea mostrar el enlace"
+
+  PAGE_TYPES: "Tipos de página (dejar en blanco para todas las páginas)"
+  PAGE_TYPES_HELP: "Seleccione los tipos de páginas para habilitar enlaces de afiliados solo para ciertos tipos"
+
+  PAGE_EXCEPTIONS: "No mostrar enlaces en las siguientes páginas"
+  PAGE_EXCEPTIONS_HELP: "Seleccione las páginas donde NO desea mostrar enlaces de afiliados"
+
+  FULL_TITLE: "Usar el título completo"
+  FULL_TITLE_HELP: "Determine si usar el título completo de la página para construir la cadena de búsqueda de Amazon en el enlace, ignorando la búsqueda basada en el contenido del post"
+  FULL_TITLE_YES: "Sí"
+  FULL_TITLE_NO: "No"
+
+  SEARCH_FROM_POST_CONTENT: "Buscar en Amazon basado en el contenido del post"
+  SEARCH_FROM_POST_CONTENT_HELP: "Configure la cadena para buscar en Amazon basado en el contenido del post. En la práctica, defina qué buscar en el post para obtener el contenido a usar en la búsqueda. Este último está identificado por el marcador '[content]'."
+  SEARCH_FROM_POST_CONTENT_DEFAULT: "Curiosidades sobre [content] que podrías encontrar útiles"
+
+  AFFILIATE_LINK_TEMPLATE: "Plantilla de enlace de afiliado"
+  AFFILIATE_LINK_TEMPLATE_HELP: "Plantilla para crear el enlace de afiliado. Los símbolos '[search_keywords]' y '[tag_id]' serán reemplazados por las palabras clave configuradas y el ID de etiqueta, respectivamente"
+  AFFILIATE_LINK_TEMPLATE_DEFAULT: 'https://www.amazon.es/s?k=[search_keywords]&linkCode=ll2&tag=[tag_id]'

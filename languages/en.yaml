@@ -1,0 +1,36 @@
+AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN:
+  ENABLED: "Enable Plugin"
+  ENABLED_HELP: "Choose if the plugin should be operational or not"
+  ENABLED_YES: "Yes"
+  ENABLED_NO: "No"
+
+  TAG_ID: "Amazon Affiliate Tag ID"
+  TAG_ID_HELP: "Enter your Tag ID obtained from Amazon here, used by Amazon to recognize your account"
+
+  LINK_POSITIONS: "Affiliate Link Positions"
+  LINK_POSITIONS_HELP: "Decide where to place your affiliate links"
+  LINK_POSITIONS_TOP: "Top"
+  LINK_POSITIONS_MIDDLE: "Middle"
+  LINK_POSITIONS_BOTTOM: "End"
+
+  N_PARAGRAPHS_TOP: "Number of paragraphs on the page before the link at the 'Top' position"
+  N_PARAGRAPHS_TOP_HELP: "If you have enabled the affiliate link at the 'Top' position, you can specify after how many paragraphs you want to show the link"
+
+  PAGE_TYPES: "Page Types (leave empty for all pages)"
+  PAGE_TYPES_HELP: "Select the types of pages to enable affiliate links for certain types only"
+
+  PAGE_EXCEPTIONS: "Do NOT show links on the following pages"
+  PAGE_EXCEPTIONS_HELP: "Select the pages where you DO NOT want to show affiliate links"
+
+  FULL_TITLE: "Use the full title"
+  FULL_TITLE_HELP: "Determine whether to use the full page title for constructing the Amazon search string in the link, ignoring the search based on post content"
+  FULL_TITLE_YES: "Yes"
+  FULL_TITLE_NO: "No"
+
+  SEARCH_FROM_POST_CONTENT: "Search on Amazon based on post content"
+  SEARCH_FROM_POST_CONTENT_HELP: "Configure the string to search on Amazon based on the post content. In practice, define what to search in the post to get the content to use in the search. The latter is identified by the marker '[content]'."
+  SEARCH_FROM_POST_CONTENT_DEFAULT: "Curiosities about [content] you might find useful"
+
+  AFFILIATE_LINK_TEMPLATE: "Affiliate Link Template"
+  AFFILIATE_LINK_TEMPLATE_HELP: "Template to use for creating the affiliate link. The symbols '[search_keywords]' and '[tag_id]' will be replaced by the configured keywords and tag ID, respectively"
+  AFFILIATE_LINK_TEMPLATE_DEFAULT: 'https://www.amazon.com/s?k=[search_keywords]&linkCode=ll2&tag=[tag_id]'

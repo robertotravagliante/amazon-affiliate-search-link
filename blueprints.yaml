@@ -1,0 +1,93 @@
+name: Amazon Affiliate Search Link
+version: 1.0.0
+description: "Add Amazon affiliate search links in the top, middle and bottom of your pages, automatically, based on the content of your pages."
+icon: amazon
+author:
+  name: "Roberto Travagliante"
+  email: "roberto@travagliante.com"
+homepage: "https://www.travagliante.com"
+keywords: "grav, plugin, html, amazon, affiliate, search, link, css, js"
+bugs: "https://www.travagliante.com/issues"
+readme: "https://www.travagliante.com/README.md"
+
+# Abilita/disabilita il plugin
+enabled: true
+
+# Configuration
+form:
+  fields:
+    enabled:
+      type: toggle
+      label: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.ENABLED
+      help: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.ENABLED_HELP
+      highlight: 1
+      default: 0
+      options:
+        1: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.ENABLED_YES
+        0: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.ENABLED_NO
+      validate:
+        type: bool
+
+    tagID:
+      type: text
+      label: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.TAG_ID
+      help: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.TAG_ID_HELP
+
+    position:
+      type: checkboxes
+      label: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.LINK_POSITIONS
+      help: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.LINK_POSITIONS_HELP
+      default: [ 'top' ]
+      options:
+        top: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.LINK_POSITIONS_TOP
+        middle: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.LINK_POSITIONS_MIDDLE
+        bottom: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.LINK_POSITIONS_BOTTOM
+      use: keys
+    
+    paragraphsBeforeTopPositionLink:
+      type: number
+      label: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.N_PARAGRAPHS_TOP
+      help: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.N_PARAGRAPHS_TOP_HELP
+      default: 1
+      validate:
+        type: int
+        min: 1
+
+    pageTypes:
+      type: selectize
+      label: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.PAGE_TYPES
+      description: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.PAGE_TYPES_HELP
+      multiple: true
+
+    excludePages:
+      type: pages
+      label: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.PAGE_EXCEPTIONS
+      help: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.PAGE_EXCEPTIONS_HELP
+      multiple: true
+      validate:
+        type: array
+
+    searchFullTitle:
+      type: toggle
+      label: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.FULL_TITLE
+      help: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.FULL_TITLE_HELP
+      highlight: 1
+      default: 1
+      options:
+        1: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.FULL_TITLE_YES
+        0: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.FULL_TITLE_NO
+      validate:
+        type: bool
+
+    searchTitleFromPost:
+      type: text
+      label: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.SEARCH_FROM_POST_CONTENT
+      help: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.SEARCH_FROM_POST_CONTENT_HELP
+      default: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.SEARCH_FROM_POST_CONTENT_DEFAULT
+
+    linkTemplate:
+      type: text
+      label: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.AFFILIATE_LINK_TEMPLATE
+      help: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.AFFILIATE_LINK_TEMPLATE_HELP
+      default: AMAZON_AFFILIATE_SEARCH_LINK_PLUGIN.AFFILIATE_LINK_TEMPLATE_DEFAULT
+      
