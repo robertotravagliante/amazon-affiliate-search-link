@@ -5,10 +5,10 @@ icon: amazon
 author:
   name: "Roberto Travagliante"
   email: "roberto@travagliante.com"
-homepage: "https://github.com/robertotravagliante/string-replacer"
+homepage: "https://github.com/robertotravagliante/amazon-affiliate-search-link"
 keywords: "grav, plugin, html, amazon, affiliate, search, link, css, js"
-bugs: "https://github.com/robertotravagliante/string-replacer/issues"
-readme: "https://github.com/robertotravagliante/string-replacer/blob/main/README.md"
+bugs: "https://github.com/robertotravagliante/amazon-affiliate-search-link/issues"
+readme: "https://github.com/robertotravagliante/amazon-affiliate-search-link/blob/main/README.md"
 
 # Abilita/disabilita il plugin
 enabled: true
